@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EternaFlix - Álbuns</title>
+  <link rel="stylesheet" href="../css/album.css">
+  <script src="../js/album.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Álbuns de Fotos</h1>
+    <nav>
+      <a href="../index.html">Início</a>
+      <a href="album.html" id="voltar-albuns">Álbuns</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Lista de Álbuns -->
+    <section id="albumList" class="album-lista">
+      <div class="album" data-album="makingof">
+        <img src="../assets/casal.jpg" alt="Making Of">
+        <h3>Making Of</h3>
+      </div>
+      <div class="album" data-album="cerimonia">
+        <img src="../assets/casal.jpg" alt="Cerimônia">
+        <h3>Cerimônia</h3>
+      </div>
+      <div class="album" data-album="festa">
+        <img src="../assets/casal.jpg" alt="Festa">
+        <h3>Festa</h3>
+      </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section id="albumDetail" class="galeria" style="display:none;">
+      <button id="closeAlbum">X</button>
+      <h2 id="albumTitle"></h2>
+      <div id="albumPhotos"></div>
+    </section>
+  </main>
+</body>
+</html>
