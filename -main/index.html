@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bianca & Arthur – Portal EternaFlix</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container row">
+      <div class="brand">
+        <img src="assets/imagens/logo.png" alt="" class="logo" onerror="this.style.display='none'">
+        <div>
+          <strong class="logo" id="">EternaFlix</strong>
+
+        </div>
+        <button class="categories"><a href="#p1"><li>Momentos</li></a></button>
+        <button class="categories"><a href="#p2"><li>Dança</li></a></button>
+        <button class="categories"><a href="#p3"><li>Festa</li></a></button>
+        <button class="categories"><a href="#p4"><li>Cerimonia</li></a></button>
+        <button class="categories"><a href="html/album.html"><li>Álbum</li></a></button>
+      </div>
+      <nav class="nav">
+        <button class="btn ghost" id="openLogin">Entrar como noivos</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media">
+      <img src="assets/casal2.jpg" alt="Capa do casal" class="hero-img"/>
+    </div>
+    <div class="container hero-content">
+      <h1><span id="coupleNameHero">Bianca & Arthur</span></h1>
+      <p class="phrase" id="taglineHero">Jesus é o centro do nosso amor.</p>
+      <p class="note"></p>
+    </div>
+  </section>
+
+  <div id="p1" class="container">
+    <h1>Melhores Momentos</h1>
+    <button class="arrow-left control" aria-label="Previous image" type="button">◀︎</button>
+    <button class="arrow-right control" aria-label="Next image" type="button">▶︎</button>  
+    <div class="gallery">
+      <div class="gall">
+        <img src="/assets/casal1.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal2.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal3.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal4.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal1.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal2.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal3.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal4.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal2.jpg" alt="casal" class="item current-item">
+      </div>
+    </div>
+  </div>
+
+  <div id="p2" class="container">
+    <h1>Dança</h1>
+    <button class="arrow-left control" aria-label="Previous image">◀︎</button>
+    <button class="arrow-right control" aria-label="Next image">▶︎</button>  
+    <div class="gallery">
+      <div class="gall">
+        <img src="/assets/casal.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal2.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal3.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal4.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal2.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal3.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal4.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal.jpg" alt="casal" class="item current-item">
+        <img src="/assets/casal2.jpg" alt="casal" class="item current-item">
+      </div>
+    </div>
+  </div>
+
+  <main class="container rails" id="rails">
+    <!-- Trilhos de categorias gerados via JS -->
+  </main>
+
+  <!-- Player Modal -->
+  <div class="modal" id="playerModal" aria-modal="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" id="closePlayer" aria-label="Fechar">&times;</button>
+      <div id="playerArea" class="player-area"><!-- iframe ou video aqui --></div>
+      <div class="meta">
+        <h3 id="playerTitle"></h3>
+        <p id="playerInfo" class="muted"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal" aria-modal="true" role="dialog">
+    <div class="modal-content small">
+      <button class="modal-close" id="closeLogin" aria-label="Fechar">&times;</button>
+      <h3>Área dos Noivos</h3>
+      <p class="muted">Digite a senha compartilhada para desbloquear o conteúdo exclusivo.</p>
+      <form id="loginForm" class="login-form">
+        <input type="password" id="password" placeholder="Senha dos noivos" required />
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+      <p id="loginStatus" class="status"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 EternaFlix — Portal dos Noivos</p>
+    </div>
+  </footer>
+</body>
+</html>
