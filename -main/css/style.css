@@ -201,6 +201,30 @@ a{
 #p2 {
   scroll-margin-top: 50px; /* ajuste conforme a altura do seu header */
 }
+@media (max-width:1528px){
+  .tile{flex-basis:70vw;}
+  .hero{min-height:40vh; padding:30px 10px;}
+  .row{gap:10px;}
+  .item{width:150px; height:250px;}
+  .container{
+    position: relative;
+    padding: 1px;
+    max-width: 1398px;
+    margin: 0 auto;
+    }
+}
 
+@media (max-width:720px){
+  .tile{flex-basis:70vw;}
+  .hero{min-height:40vh; padding:30px 10px;}
+  .row{gap:10px;}
+  .item{width:150px; height:250px;}
+  .container{
+    position: relative;
+    padding: 1px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
 
 
