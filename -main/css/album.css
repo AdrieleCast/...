@@ -6,15 +6,15 @@ body {
 }
 
 header {
-  background: #b08d57;
+  background: #b4976a;
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
 header nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 8px;
   text-decoration: none;
 }
 
@@ -28,7 +28,10 @@ header nav a {
 
 .album {
   background: white;
-  padding: 10px;
+  padding-left: 10px;  
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
@@ -41,8 +44,9 @@ header nav a {
 }
 
 .album img {
-  width: 150px;
+  width: 250px;
   border-radius: 6px;
+  margin: 10px;
 }
 
 .galeria {

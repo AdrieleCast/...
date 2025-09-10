@@ -7,9 +7,9 @@ const voltarAlbuns = document.getElementById("voltar-albuns");
 
 // Dados dos álbuns
 const albumsData = {
-    makingof: ["../assets/casal.jpg", "../assets/casal.jpg", "../assets/casal.jpg"],
-    cerimonia: ["../assets/casal.jpg", "../assets/casal.jpg"],
-    festa: ["../assets/casal.jpg", "../assets/casal.jpg", "../assets/casal.jpg", "../assets/casal.jpg"]
+    makingof: ["../assets/casal2.jpg", "../assets/casal2.jpg", "../assets/casal2.jpg"],
+    cerimonia: ["../assets/casal2.jpg", "../assets/casal2.jpg"],
+    festa: ["../assets/casal2.jpg", "../assets/casal2.jpg", "../assets/casal2.jpg", "../assets/casal2.jpg"]
 };
 
 // Função para abrir álbum
